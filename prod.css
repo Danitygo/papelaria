@@ -1,0 +1,201 @@
+header{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(157, 236, 236);
+    padding: 10px 0px;
+}
+
+header img{
+    width: 60px;
+    height: 60px;
+    border-radius: 42px;
+    padding: 1px 5px;
+}
+
+header nav a{
+    text-decoration: none;
+}
+
+header nav a:hover{
+    border-radius: 0px 10px;
+    padding: 5px;
+    background-color: chocolate;
+    color: white;
+}
+
+/* links do corpo */
+
+main{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+
+}
+
+/* Submenu ocultado inicialmente */
+nav ul li{
+    position: relative;
+    list-style: none;
+    right: 38px;
+}
+ nav ul li .submer{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: cornflowerblue;
+    min-width: 150px;
+    z-index: 1000;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+}
+
+/* Estilo dos links dentro do submenu */
+ nav ul li .submer a{
+   padding: 8px 12px;
+   color: #333;
+   text-decoration: none;
+   line-height: 40px;
+   position: relative;
+   left: 40px;
+}
+
+nav ul li .submer a:hover{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    line-height: 35px;
+}
+
+/* Mostrar submenu ao passar rato */
+nav ul li:hover .submer{
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px;
+
+}
+
+/* Tamanho de google map */
+footer iframe{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.espaco{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+   
+    
+}
+
+.espaco span{
+    white-space: nowrap;
+   
+}
+
+.linha{
+    flex: 1 ;
+    display: block;
+    background-color:  gray;
+    height: 2px ;
+    margin: 0 8px;
+}
+
+footer h3{
+    padding: 20px 0px;
+}
+
+footer h4{
+    padding: 10px 0px;
+}
+
+.tel::before{
+    content:"";
+    width: 30px;
+    height: 20px;
+    background-image: url("img/telefono.png");
+    background-size: 30px 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+::before{
+    margin: 0px 3px;
+}
+
+.tel{
+   padding: 10px 0px;
+
+}
+
+.contato{
+   width: 100%;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+  
+   
+}
+
+.contato button{
+    border: solid white;
+    background-color: white;
+    
+}
+
+.contato img{
+    max-width: 20px;
+}
+
+.contato:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+.contato button:hover{
+    background-color: brown;
+    border: solid brown;
+    cursor: pointer;
+    color: darkorange;
+    
+}
+.indicativo{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+
+    
+}
+
+footer ol{
+    list-style: none;
+}
+

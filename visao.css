@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -299,3 +300,236 @@ footer ol{
     list-style: none;
 }
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/*topo do site*/
+header{
+ width: 100%;
+ margin: 0 auto;
+ position: fixed;
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: space-evenly;
+ align-items: center;
+ top: 0px;
+ background-color: rgb(245, 249, 249);
+
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+}
+nav{
+   display: flex;
+   gap: 15px
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/*nome e imagem da empresa*/
+
+.nome_empresa{
+    width: 100%;
+    display: flex;
+    flex-flow:column wrap;
+    margin:0 auto;
+    padding: 40px 0px 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome_empresa img{
+ width: 100%;
+ max-width: 1024px;
+}
+
+@media (min-width:300px) and (max-width:768px){
+    body{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+    }
+}
+
+/* sobre serviços*/
+
+main{
+    margin-top: 50px;
+}
+
+main h2{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.linkar{
+    text-align: center;
+    padding: 15px 0px;
+}
+
+main a{
+
+    text-decoration: none;
+    background-color: chartreuse;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: crimson;
+}
+
+.produto{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.materiais{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid gray;
+}
+
+.materiais img{
+    width: 199px;
+    height: 200px;
+}
+
+.materiais p{
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0px;
+
+}
+
+footer iframe{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.espaco{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+   
+    
+}
+
+.espaco span{
+    white-space: nowrap;
+   
+}
+
+.linha{
+    flex: 1 ;
+    display: block;
+    background-color:  gray;
+    height: 2px ;
+    margin: 0 8px;
+}
+
+footer h3{
+    padding: 20px 0px;
+}
+
+footer h4{
+    padding: 10px 0px;
+}
+
+.tel::before{
+    content:"";
+    width: 30px;
+    height: 20px;
+    background-image: url("img/telefono.png");
+    background-size: 30px 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+::before{
+    margin: 0px 3px;
+}
+
+.tel{
+   padding: 10px 0px;
+
+}
+
+.contato{
+   width: 100%;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+  
+   
+}
+
+.contato button{
+    border: solid white;
+    background-color: white;
+    
+}
+
+.contato img{
+    max-width: 20px;
+}
+
+.contato:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+.contato button:hover{
+    background-color: brown;
+    border: solid brown;
+    cursor: pointer;
+    color: darkorange;
+    
+}
+.indicativo{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+
+    
+}
+
+footer ol{
+    list-style: none;
+}
+
+>>>>>>> d1b0841 (novas atualizações)
