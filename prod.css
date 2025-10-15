@@ -21,7 +21,7 @@ header{
     width: 100%;
     background: linear-gradient(90deg, #fff7d1, #f5e6a8);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 50px;
@@ -54,17 +54,22 @@ header nav a:hover{
 
 /* links do corpo */
 
-main {
+.guia {
    
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     align-items: center;
-    padding: 69px 20px 30px;
-    gap: 30px;
-    text-align: center;
+    height: 70vh;
+    padding-bottom: 20px;
+   
    
 
 }
+
+.guia nav ul li ul li a{
+    color: white;
+}
+
 
 /* Submenu ocultado inicialmente */
 main nav ul{
@@ -84,11 +89,15 @@ main nav ul{
   display: none;
   flex-direction: column;
   position: absolute;
-  max-width: 400px;
-  height: 280px;
-  left: 26px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.8);
-  z-index: 10;
+  color: aliceblue;
+  height: 280px;background-color: #333;
+  box-shadow: 0 4px 8px rgba(45, 41, 41, 0.8);
+  
+ 
+}
+
+.submer li  a{
+    color: white;
 }
 
 .submer li a:hover{
@@ -96,17 +105,16 @@ main nav ul{
     height: 50px;
     text-align: start;
     background-color: #7dd3e0;
-    color: #f8f8f8;
     border-radius: 15px;
 
 }
 
 
 nav ul li ul li a {
+
     display: flex;
     flex-direction: column;
     align-items: start;
-  
 }
 
 
@@ -115,7 +123,6 @@ nav ul li ul li a {
     background-color: #c6a700;
     color: white;
     padding: 15px 25px;
-    border-radius: 30px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.3s;
@@ -125,6 +132,7 @@ nav ul li ul li a {
 
     background-color: #d4a017;
     transition: scale(1.05);
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 /* Estilo dos links dentro do submenu */
@@ -146,9 +154,9 @@ nav ul li a{
     text-decoration: none;
 }
 
-main img{
+.guia img{
     width: 90%;
-    max-width: 800px;
+    max-width: 600px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgb(0, 0,0, 0.1);
 }
@@ -161,13 +169,39 @@ main img{
     .submer a{
         color: #ffcc00;
     }
+
+    .guia img {
+        padding-top: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+    }
 }
+
+@media (min-width: 1024px){
+    .guia{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding-bottom: 15px;
+    }
+
+    .guia img  {
+       max-width: 800px;
+       min-height: 60vh;
+       
+    };
+}
+
 
 footer{
    background-color: #333;
    color: white;
    padding: 40px 20px;
    text-align: center;
+   margin-top: 100px;
 
 }
 
@@ -243,6 +277,8 @@ footer h3, footer h4 {
 
 .contato img{
     max-width: 20px;
+    position: relative;
+    top: 5px;
 }
 
 .contato button:hover{

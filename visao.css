@@ -18,7 +18,8 @@ body{
 }
 
 
-/*topo do site*/
+/* Topo do site*/
+
 header{
  width: 100%;
  margin: 0 auto;
@@ -34,6 +35,8 @@ header{
  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
 }
+
+/* Logo da empresa */
 
 header img{
     width: 50px;
@@ -61,7 +64,7 @@ a{
     text-decoration: none;
 }
 
-/*nome e imagem da empresa*/
+/* Nome  e imagem da empresa */
 
 .nome_empresa{
     padding-top: 100px;
@@ -82,12 +85,13 @@ a{
 }
 
 
-/* sobre serviços*/
+
 
 main{
     margin-top: 60px;
     text-align: center;
 }
+
 
 main h2{
     color: #333;
@@ -95,31 +99,56 @@ main h2{
     font-size: 1.8rem;
 }
 
-.linkar a {
-    background-color: #c6a700;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: background 0.3s;
+/* Sobre nós */
+
+.sobre {
+
+   width: 90%;
+   margin: 0 auto;
+   max-width: 900px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
 }
 
-.linkar a:hover {
-    background-color: #d4a017;
+.sobre p {
+    text-align: start;
+    padding: 0px 10px ;
 }
+
+.sobre ul li {
+    text-align: start;
+}
+
+/* Os nossos Serviços */
 
 .produto {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
     gap: 25px;
 }
+
+/* Seção dos produtos */
+
+.galeria {
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Produtos / imagem e o nome */
 
 .materiais{
    width: 100%;
@@ -129,6 +158,7 @@ main h2{
    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
    transition: transform 0.3s, box-shadow 0.3s;
    overflow: hidden;
+   margin: 10px;
    
 }
 
@@ -149,6 +179,21 @@ main h2{
 .materiais:hover{
     transform: translateY(-8px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.linkar a {
+    background-color: #c6a700;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.linkar a:hover {
+    background-color: #d4a017;
 }
 
 /* =====Rodapé======*/
@@ -233,6 +278,8 @@ footer h3, footer h4 {
 
 .contato img{
     max-width: 20px;
+    position: relative;
+    top: 5px;
 }
 
 .contato button:hover{
