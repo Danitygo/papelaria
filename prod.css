@@ -75,6 +75,8 @@ header nav a:hover{
 main nav ul{
   
     list-style: none;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -84,29 +86,64 @@ main nav ul{
 
 }
 
-.submer {
+.entrada {
+    display: inline-block;
+    background-color: #c6a700;
+    color: white;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Submenu escondido por padrão */
+.submenu {
   width: 80%;
   display: none;
   flex-direction: column;
   position: absolute;
   color: aliceblue;
-  height: 280px;background-color: #333;
-  box-shadow: 0 4px 8px rgba(45, 41, 41, 0.8);
-  
+  height: 280px;
+  background-color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  z-index: 10;
  
 }
 
-.submer li  a{
+.submenu li  a{
     color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
 }
 
-.submer li a:hover{
+.submenu li a:hover{
     width: 220px;
     height: 50px;
     text-align: start;
     background-color: #7dd3e0;
     border-radius: 15px;
+   
+}
 
+/* Oculta o input (checkbox) */
+.toggle {
+    display: none;
+}
+
+/* quando checkbox está ativo, mostra o submenu */
+.toggle:checked + .submenu {
+    display: flex;
+}
+
+/* Também mostra submenu em hover no desktop */
+nav ul li:hover .submenu{
+    display: flex;
+}
+
+
+nav ul li a{
+    text-decoration: none;
 }
 
 
@@ -118,15 +155,7 @@ nav ul li ul li a {
 }
 
 
-.entrada {
-    display: inline-block;
-    background-color: #c6a700;
-    color: white;
-    padding: 15px 25px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
-}
+
 
 .entrada:hover {
 
@@ -136,7 +165,7 @@ nav ul li ul li a {
 }
 
 /* Estilo dos links dentro do submenu */
- nav ul li .submer a{
+ nav ul li .submenu a{
    padding: 8px 12px;
    color: #333;
    text-decoration: none;
@@ -145,14 +174,8 @@ nav ul li ul li a {
    left: 40px;
 }
 
-nav ul li:hover .submer{
-    display: flex;
-}
 
 
-nav ul li a{
-    text-decoration: none;
-}
 
 .guia img{
     width: 90%;
@@ -166,8 +189,14 @@ nav ul li a{
         padding-bottom: 120px;
         color: #d4a017;
     }
-    .submer a{
+    .submenu li a{
         color: #ffcc00;
+        width: 220px;
+        height: 50px;
+        text-align: start;
+        background-color: #7dd3e0;
+        border-radius: 15px;
+        margin-top: 5px;
     }
 
     .guia img {
@@ -180,7 +209,18 @@ nav ul li a{
 }
 
 @media (min-width: 1024px){
-    .guia{
+    
+}
+
+/* Ajustes para ecrãs pequenos */
+@media (min-width: 1024px) {
+  .submenu {
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+  }
+  
+  .guia{
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -193,6 +233,7 @@ nav ul li a{
        min-height: 60vh;
        
     };
+
 }
 
 
